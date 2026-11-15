@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-------------------------Top Nav---------------------->
+    <div>
+      <header class="mainH">
+        <a href="index.html"> <img src="img/blu.svg" alt="Blu Logo" /></a>
+        <nav class="topNav">
+          <a href="index.html"><span>Home</span></a>
+          <a href="projects.html"><span>Projects</span></a>
+          <a href="aboutme.html"><span>About Me</span></a>
+          <a class="contact" href="contact.html"><span>Contact Me</span></a>
+        </nav>
+      </header>
+    </div>
+
+    <!-------------------------CONTACT ME---------------------->
+    <div class="contactMe">
+      <div class="formContainer">
+        <div class="contactL">
+          <h1>Contact Me</h1>
+          <p>
+            Do you want to work with me on your next design or project?
+            <br />Fill out the form below and lets get to work!
+          </p>
+          <form action="submit.html">
+            <div class="formBox">
+              <label for="Name"></label>
+              <input type="text" name="fullname" placeholder="Name" required />
+            </div>
+            <div class="formBox">
+              <label for="Email"></label>
+              <input type="text" name="email" placeholder="Email" required />
+            </div>
+            <div class="formBox">
+              <label for="Message"></label>
+              <textarea
+                id="formMessage"
+                type="text"
+                name="message"
+                placeholder="What would you like to work on?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="subButton">Lets Work!</button>
+          </form>
+        </div>
+      </div>
+      <img src="img/monarussell.jpg" alt="The Beautiful Mona Russell" />
+    </div>
+
+    <!-------------------------FOOTER---------------------->
+    <div class="theFoot">
+      <footer>© 2026 Russell Blubaugh. All Rights Reserved.</footer>
+      <div class="imgFlex">
+        <a href="https://github.com/rblubaugh-cmp" target="_blank">
+          <img src="./img/github-svgrepo-com.svg"
+        /></a>
+        <a href="https://www.tiktok.com/@proofsinpuddin" target="blank">
+          <img src="./img/tiktok-svgrepo-com.svg"
+        /></a>
+        <a href="https://www.twitch.tv/bruhology_pod" target="blank">
+          <img src="./img/twitch-svgrepo-com.svg"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
