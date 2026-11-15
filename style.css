@@ -1,7 +1,7 @@
 body {
   display: flex;
-  background-color: #293241;
   flex-direction: column;
+  background-color: #293241;
   width: 100%;
   min-height: 100vh;
 }
@@ -12,25 +12,27 @@ body {
 .mainH {
   display: flex;
   justify-content: space-between;
-  background-color: #1d232e;
-  padding: 0.5rem 0 0.5rem 0;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background-color: #1d232e;
+  padding: 0.75rem 2rem;
   border-bottom: 0.0625rem solid #1971c2;
 }
 
 .mainH img {
   width: 40px;
   height: auto;
-  align-items: left;
-  margin-left: 2rem;
   border-radius: 100px;
   background-color: white;
 }
 
 .topNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  margin-right: 2rem;
 }
 
 .topNav a {
@@ -38,7 +40,7 @@ body {
   text-transform: uppercase;
   color: white;
   font-size: 0.75rem;
-  padding: 0 1rem;
+  padding: 0.25rem 1rem;
   border-right: 2px solid #1971c2;
 }
 
@@ -53,6 +55,7 @@ body {
   color: #1971c2;
   transform: scale(1.1);
 }
+
 .topNav .contact {
   border: none;
 }
@@ -70,26 +73,30 @@ body {
 
 .myPic {
   display: flex;
-  justify-content: end;
-  align-self: end;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
-  item-align: flex-end;
 }
 
 .myPic img {
-  height: 95%;
+  height: 100%;
   max-height: 1100px;
   width: auto;
   max-width: none;
   object-fit: contain;
   display: block;
-  transform: translateY(-50px) translateX(200px) scale(1.125);
+  transform: translateX(200px) scale(1.125);
   transform-origin: bottom right;
 }
+
 .homeContent {
-  margin-bottom: 22rem;
-  transform: translateX(9rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 18rem;
+  transform: translateX(6rem);
 }
 
 .homeContent h1 {
@@ -98,6 +105,7 @@ body {
   font-family: cursive;
   font-size: 3rem;
 }
+
 .mySlogan {
   text-align: center;
   border: 0.25rem solid #1971c2;
@@ -106,16 +114,18 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   border-radius: 1rem;
-  width: 30rem;
+  width: 90%;
+  max-width: 30rem;
   padding: 2rem;
   margin-top: 2rem;
-  margin-left: 6rem;
+  box-sizing: border-box;
 }
 
 .homeButtons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -134,13 +144,11 @@ body {
     color 0.25s ease;
 }
 
-/* Solid Blue Primary Button */
 .bProject,
 .bContact {
   background-color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #1971c2;
-  margin-right: 4rem;
 }
 
 .bProject:hover,
@@ -155,19 +163,20 @@ body {
 .projContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-evenly;
-  margin-top: 4rem;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1300px;
+  margin: 4rem auto 2rem auto;
 }
 
 .project1,
 .project2,
 .project3 {
-  margin: auto;
   border: 2px solid #1971c2;
-  width: 80%;
-  height: 93%;
+  width: 100%;
   padding: 1rem;
   border-radius: 2rem;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -185,15 +194,16 @@ h2 {
 .imgProj {
   display: block;
   margin: 1rem auto;
-  max-width: 90%;
+  width: 90%;
+  height: auto;
   border: 0.125rem solid #1971c2;
 }
 
-.project1,
-.project2,
+.project1 p,
+.project2 p,
 .project3 p {
   color: white;
-  font-family: Geneva, tahoma;
+  font-family: Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   text-align: center;
 }
@@ -202,90 +212,36 @@ h2 {
   padding-top: 1rem;
 }
 
-ul {
-  display: grid;
-  margin: 0 2rem 0 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-li {
-  display: grid;
+.skills ul {
+  display: flex;
   justify-content: center;
-  padding: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+.skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 0.9rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   color: white;
-}
-
-#p1HTML {
   border: 2px solid #1971c2;
-  border-right: none;
   border-radius: 0.5rem;
-  width: 4.5rem;
-}
-
-#p1Grid {
-  border: 2px solid #1971c2;
-  border-right: none;
-  border-left: none;
-  border-radius: 0.5rem;
-  width: 4.5rem;
-}
-
-#p1Flex {
-  border: 2px solid #1971c2;
-  border-left: none;
-  border-radius: 0.5rem;
-  width: 4.5rem;
-}
-
-#p2HTML {
-  border: 2px solid #1971c2;
-  border-right: none;
-  border-radius: 0.5rem;
-  width: 4rem;
-}
-
-#p2CSS {
-  border: 2px solid #1971c2;
-  border-right: none;
-  border-left: none;
-  border-radius: 0.5rem;
-  width: 4rem;
-}
-
-#p2Grid {
-  border: 2px solid #1971c2;
-  border-left: none;
-  border-radius: 0.5rem;
-  width: 4rem;
-}
-
-.p3Skills {
-  grid-template-columns: 1fr 1fr;
-  margin-left: 5.5rem;
-}
-
-#p3HTML {
-  border: 2px solid #1971c2;
-  border-right: none;
-  border-radius: 0.5rem;
-  width: 4rem;
-}
-
-#p3CSS {
-  border: 2px solid #1971c2;
-  border-left: none;
-  border-radius: 0.5rem;
-  width: 4rem;
-  margin-right: 4.5rem;
+  box-sizing: border-box;
 }
 
 #projLinks {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 1rem;
-  text-decoration: none;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
 }
 
 #projLinks span {
@@ -309,7 +265,7 @@ li {
 }
 
 /*=============================================================
-    About Me
+    ABOUT ME
 =============================================================*/
 .aboutMe {
   margin: 0 auto;
@@ -318,24 +274,28 @@ li {
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: auto;
+  max-width: 1200px;
 }
+
 .aboutMe h1 {
-  width: 50%;
+  width: 80%;
+  max-width: 35rem;
   text-align: center;
   font-family: cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
   margin-top: 2rem;
   color: #1971c2;
   background-color: #1d232e;
   border-radius: 2rem 0 2rem 0;
 }
+
 .aboutMe p {
-  width: 60%;
+  width: 85%;
+  max-width: 50rem;
   text-align: center;
   color: white;
-  font-family: Geneva, tahoma;
+  font-family: Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   margin-top: 2rem;
   line-height: 2rem;
@@ -345,21 +305,18 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 2rem;
   width: 100%;
-  flex-wrap: wrap;
-}
-.aboutMe img {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 30%;
-  height: auto;
 }
 
+.aboutMe img,
 #rugby {
-  width: 33%;
+  width: 30%;
+  min-width: 250px;
+  max-width: 380px;
   height: auto;
 }
 
@@ -367,20 +324,26 @@ li {
     CONTACT ME
 =============================================================*/
 .contactMe {
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 5rem;
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1100px;
+  padding-top: 3rem;
 }
+
 .formContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+
 .contactMe h1 {
   text-align: center;
   color: #1971c2;
   background-color: #1d232e;
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   padding: 1rem;
@@ -397,11 +360,14 @@ li {
 
 .contactL {
   margin: 0 auto;
+  width: 100%;
 }
 
-input {
+input,
+textarea {
   border: 0.25rem solid #1d232e;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   margin-top: 1rem;
   background-color: aliceblue;
@@ -411,23 +377,17 @@ input {
 }
 
 textarea {
-  display: flex;
-  width: 90%;
   min-height: 10rem;
-  border: 0.25rem solid #1d232e;
-  padding: 1rem;
-  margin-top: 1rem;
-  background-color: aliceblue;
-  color: #1d232e;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
 }
+
 .contactMe img {
-  width: 33rem;
+  width: 100%;
+  max-width: 30rem;
   height: auto;
   border: 0.5rem solid #1d232e;
   border-radius: 0 3rem 0 3rem;
-  margin-left: 5rem;
+  margin: 0 auto;
+  display: block;
 }
 
 .subButton {
@@ -437,12 +397,13 @@ textarea {
   text-transform: uppercase;
   font-weight: bold;
   width: 10rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0;
   border: 0.125rem solid #1971c2;
   background-color: #1d232e;
   padding: 0.75rem;
   color: white;
   border-radius: 0.25rem;
+  cursor: pointer;
 }
 
 .subButton:hover {
@@ -450,50 +411,97 @@ textarea {
   border: 0.125rem solid #1d232e;
   color: white;
 }
+
 /*=============================================================
     FOOTER
 =============================================================*/
-
 .theFoot {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  background-color: #1d232e;
-  padding: 0.25rem 0 0.25rem 0;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: #1d232e;
+  padding: 0.5rem 2rem;
   border-top: 0.0625rem solid #1971c2;
   width: 100%;
+  box-sizing: border-box;
   left: 0;
   bottom: 0;
 }
+
 .imgFlex {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 }
+
 .theFoot img {
-  padding-top: 0.5rem;
   width: 20px;
   height: auto;
-  margin-right: 2rem;
-  fill: white;
-}
-
-.theFoot footer {
-  margin-left: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  font-size: 0.75rem;
-  font-weight: lighter;
-}
-
-.theFoot img {
   display: inline-block;
   transition:
     color 0.25s,
     transform 0.2s ease;
 }
 
+.theFoot footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
 .theFoot a:hover {
   color: #1971c2;
   transform: scale(1.1);
+}
+
+/*=============================================================
+  MEDIA QUERY
+=============================================================*/
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 5rem;
+  }
+
+  .homePage,
+  .projContainer,
+  .contactMe {
+    grid-template-columns: 1fr;
+  }
+
+  .homePage {
+    height: auto;
+    overflow: visible;
+    padding: 2rem 1rem;
+  }
+
+  .homeContent {
+    margin-bottom: 2rem;
+    transform: none;
+  }
+
+  .homeContent h1 {
+    white-space: normal;
+  }
+
+  .myPic {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myPic img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    transform: none;
+  }
+
+  .homeContent h1,
+  .aboutMe h1,
+  .contactMe h1 {
+    font-size: 2.25rem;
+  }
 }
