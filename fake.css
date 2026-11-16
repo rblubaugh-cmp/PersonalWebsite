@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  background-color: #293241;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/*=============================================================
+    HEADER
+=============================================================*/
+.mainH {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d232e;
+  padding: 0.5rem 0 0.5rem 0;
+  align-items: center;
+  border-bottom: 0.0625rem solid #1971c2;
+  position: relative;
+  z-index: 10;
+}
+
+.mainH img {
+  width: 40px;
+  height: auto;
+  align-items: left;
+  margin-left: 2rem;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.topNav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.topNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0 1rem;
+  border-right: 2px solid #1971c2;
+}
+
+.topNav a span {
+  display: inline-block;
+  transition:
+    color 0.25s,
+    transform 0.2s ease;
+}
+
+.topNav a:hover span {
+  color: #1971c2;
+  transform: scale(1.1);
+}
+.topNav .contact {
+  border: none;
+}
+/*=============================================================
+    BODY
+=============================================================*/
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 10rem;
+  color: white;
+}
+.myPic {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.myPic img {
+  height: 95%;
+  max-height: 3500px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  display: block;
+  transform: translateY(-225px) translateX(150px) scale(1.125);
+}

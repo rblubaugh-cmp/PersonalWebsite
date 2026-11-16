@@ -293,7 +293,6 @@ h2 {
 .aboutMe p {
   width: 85%;
   max-width: 50rem;
-  text-align: center;
   color: white;
   font-family: Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
@@ -461,7 +460,7 @@ textarea {
 /*=============================================================
   MEDIA QUERY
 =============================================================*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   body {
     padding-bottom: 5rem;
   }
