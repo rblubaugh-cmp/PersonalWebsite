@@ -317,6 +317,7 @@ h2 {
   min-width: 250px;
   max-width: 380px;
   height: auto;
+  border-radius: 3rem 0 3rem 0;
 }
 
 /*=============================================================
