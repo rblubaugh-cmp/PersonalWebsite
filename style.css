@@ -53,7 +53,7 @@ body {
 
 .topNav a:hover span {
   color: #1971c2;
-  transform: scale(1.1);
+  font-size: 0.8125rem;
 }
 
 .topNav .contact {
